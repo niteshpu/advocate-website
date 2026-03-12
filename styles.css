@@ -269,18 +269,20 @@ a {
   border: 1px solid rgba(209, 213, 219, 0.8);
 }
 
-.profile-photo-placeholder {
-  width: 96px;
-  height: 96px;
-  border-radius: 999px;
-  border: 2px dashed #d1d5db;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  color: #9ca3af;
+.profile-photo {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 4 / 5;
+  border-radius: 1rem;
+  overflow: hidden;
   margin-bottom: 1rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.25);
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-profile-card h2 {
